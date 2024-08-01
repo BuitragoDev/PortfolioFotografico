@@ -1,0 +1,574 @@
+<!-- =================================================================================
+================	URL 		      |		www.antoniobuitrago.es   =================
+================	Author Name		  |		Antonio Buitrago         =================
+================================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Página web creada por mi para mostrar en mi Portfolio.">
+    <meta name="keywords" content="Photography, Antonio, Buitrago, HTML5, CSS, Javascript, Bootstrap, Web, Proyectos" />
+    <meta name="author" content="Antonio Buitrago">
+    <meta name="robots" content="index" />
+
+    <!-- Titulo de la Web -->
+    <title>..:: Antonio Buitrago &bull; PHOTOGRAPHY ::..</title>
+
+    <!-- Favicon para cualquier navegador -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" sizes="32x32">
+    <!-- Favicon para los modelos más recientes de iPad y iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" type="image/png" sizes="152x152">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" type="image/png" sizes="120x120">
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS Página principal -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS de las animaciones -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Librerias FontAwesome,jQuery y SweetAlert (Última versión a 2 de noviembre de 2023) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@latest/dist/sweetalert2.all.min.js"></script>
+
+    <!-- CSS del Lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+
+<body id="home">
+
+    <div class="container-fluid page-container d-flex justify-content-between">
+
+        <div class="row d-flex justify-content-between">
+
+            <!-- Aquí empieza el aside o barra lateral con el menú -->
+            <aside class="col-12 col-md-4 col-lg-3 p-3 sidebar">
+
+                <div class="row d-flex flex-column">
+
+                    <!-- Contenedor del botón de cerrar menú -->
+                    <div class="col-12 d-flex justify-content-end">
+
+                        <i class="fa-solid fa-xmark d-md-none" style="color: #FFFFFF;"></i>
+
+                    </div> <!-- /boton cerrar -->
+
+                    <!-- Contenedor con el logo y el título -->
+                    <div class="row">
+
+                        <div class="col-12 logo d-flex flex-column justify-content-center align-items-center my-4 ">
+
+                            <a class="text-center" href="index.html" target="_self"
+                                title="Enlace al principio de la página"><img class="img-fluid" src="img/logo.webp"
+                                    alt="Imagen del autor de la web"></a>
+
+                            <h2 class="my-3 text-white">ANTONIO BUITRAGO</h2>
+
+                        </div>
+                    </div> <!-- /logo y titulo -->
+
+                    <!-- Contenedor con las opciones de menú -->
+                    <div class="row">
+
+                        <div class="col nav d-flex flex-column justify-content-center align-items-center gap-3 mb-5">
+
+                            <ul class="list-unstyled px-2">
+
+                                <li><a href="#home"
+                                        class="text-decoration-none px-3 py-2 d-block text-center">Inicio</a></li>
+
+                                <li><a href="#about" class="text-decoration-none px-3 py-2 d-block text-center">¿Quién
+                                        soy?</a></li>
+
+                                <li><a href="#gallery"
+                                        class="text-decoration-none px-3 py-2 d-block text-center">Galería</a></li>
+
+                                <li><a href="#contact"
+                                        class="text-decoration-none px-3 py-2 d-block text-center">Contactar</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div> <!-- /menu -->
+
+                    <!-- Contenedor de las redes sociales -->
+                    <div class="row mt-5">
+
+                        <div class="col social d-flex justify-content-center align-items-center gap-4">
+
+                            <a href="https://www.facebook.com/" title="Ir a mi Facebook personal" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+
+                            <a href="https://www.instagram.com/" title="Ir a mi Instagram personal" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                            <a href="https://www.pinterest.es/" title="Ir a mi Pinterest personal" target="_blank"><i
+                                    class="fa-brands fa-pinterest-p"></i></a>
+
+                            <a href="https://es.linkedin.com/" title="Ir a mi Linkedin personal" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+
+                        </div>
+
+                    </div> <!-- /redes sociales -->
+
+                </div>
+
+            </aside> <!-- /.aside -->
+
+            <!-- Aquí empieza el main o sección con el contenido de la página -->
+            <main class="col-12 col-md-8 col-lg-9 p-2">
+
+                <!-- Contenedor del botón de abrir menú -->
+                <div class="col-12 d-flex justify-content-end sticky-top p-1 d-md-none rounded">
+
+                    <i class="fa-solid fa-bars-staggered open-btn bg-black p-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="color: #FFFFFF;"></i>
+
+                </div> <!-- /boton cerrar -->
+
+                <!-- Contenedor con el menú hamburguesa en modo móvil -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+
+                    <div class="offcanvas-header">
+
+                        <i type="button" class="fa-solid fa-xmark btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: #FFFFFF;"></i>
+
+                    </div>
+
+                    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center h-100 pb-5">
+
+                        <!-- Opciones de menu -->
+                        <ul class="list-unstyled px-2">
+                            <li><a href="#home" class="text-decoration-none px-3 py-2 d-block text-center"
+                                    onclick="cerrarOffcanvas()">Inicio</a></li>
+                            <li><a href="#about" class="text-decoration-none px-3 py-2 d-block text-center"
+                                    onclick="cerrarOffcanvas()">¿Quién soy?</a></li>
+                            <li><a href="#gallery" class="text-decoration-none px-3 py-2 d-block text-center"
+                                    onclick="cerrarOffcanvas()">Galería</a></li>
+                            <li><a href="#contact" class="text-decoration-none px-3 py-2 d-block text-center"
+                                    onclick="cerrarOffcanvas()">Contactar</a></li>
+                        </ul>
+
+                        <!-- Contenedor de las redes sociales -->
+                        <div class="row mt-5">
+
+                            <div class="col social d-flex justify-content-center align-items-center gap-4">
+
+                                <a href="https://www.facebook.com/" title="Ir a mi Facebook personal" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+
+                                <a href="https://www.instagram.com/" title="Ir a mi Instagram personal" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+
+                                <a href="https://www.pinterest.es/" title="Ir a mi Pinterest personal" target="_blank"><i
+                                        class="fa-brands fa-pinterest-p"></i></a>
+
+                                <a href="https://es.linkedin.com/" title="Ir a mi Linkedin personal" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+
+                            </div>
+
+                        </div> <!-- /redes sociales -->
+
+                    </div>
+                </div>
+
+                <!-- Sección 1 - Pantalla de portada -->
+                <div class="container home">
+
+                    <div class="row home-intro d-flex flex-column justify-content-center align-items-center p-3">
+
+                        <div class="col-12 presentacion">
+
+                            <p id="saludo"></p>
+
+                            <h2>ANTONIO BUITRAGO</h2>
+
+                            <p class="mt-5 mb-5">Soy un fotógrafo aficionado establecido en Madrid, creando paisajes de
+                                ensueño con blanco, negro y tonos intermedios.</p>
+
+                        </div>
+
+                        <div class="col-12 d-flex flex-column flex-lg-row gap-2">
+
+                            <a class="botonPortfolio" href="#gallery" title="Enlace que lleva a la sección Galería.">Mis
+                                Trabajos</a>
+                            <a class="botonContactar" href="#contact"
+                                title="Enlace que lleva a la sección de Contacto.">Contáctame</a>
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- /portada -->
+
+                <!-- Sección 2 - About -->
+                <div id="about" class="container about px-5">
+
+                    <div class="row d-flex flex-column-reverse flex-lg-row p-2">
+
+                        <div class="col about-text">
+
+                            <h1>¿Quién soy?</h1>
+
+                            <hr>
+
+                            <p>Soy un fotógrafo aficionado establecido en Madrid, creando paisajes de ensueño con
+                                blanco,
+                                negro y tonos intermedios.</p>
+
+                            <p class="about-contain">En mi trabajo, busco capturar la esencia y la belleza de cada
+                                escena, creando imágenes que transmitan emociones y cuenten historias visuales únicas.
+                                Mi enfoque se centra en la creatividad y la conexión con el entorno, buscando siempre la
+                                excelencia en cada captura.</p>
+
+                            <p>A través de mi lente, busco captar momentos efímeros que revelan la singularidad de cada
+                                instante. La fotografía es mi forma de expresión, donde la luz y la sombra danzan en
+                                armonía. ¡Bienvenido a mi mundo visual!</p>
+
+                            <p class="d-flex justify-content-start align-items-center gap-3 mt-5"><i
+                                    class="fa-solid fa-circle-check" style="color: #7f7a7a;"></i><span>Más de 10 años de
+                                    experiencia</span></p>
+                            <p class="d-flex justify-content-start align-items-center gap-3"><i
+                                    class="fa-solid fa-circle-check" style="color: #7f7a7a;"></i><span>100+ Proyectos
+                                    realizados satisfactoriamente</span></p>
+                            <p class="d-flex justify-content-start align-items-center gap-3"><i
+                                    class="fa-solid fa-circle-check" style="color: #7f7a7a;"></i><span>Calidad
+                                    excepcional
+                                    en el trabajo</span></p>
+
+                            <hr class="mt-5">
+
+                            <div class="row d-flex">
+
+                                <div class="col">
+                                    <img src="img/firma.png" alt="Dibujo de la firma del autor">
+                                </div>
+                                <div class="col">
+                                    <p><span class="firma-autor">Antonio Buitrago</span><br><span
+                                            class="firma-founder">Creador de Photography</span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col about-image d-flex justify-content-center align-items-end">
+
+                            <img src="img/about-img.webp" alt="Imagen de una chica sacando una foto.">
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- Fin del ABOUT -->
+
+                <!-- Sección 3 - Galería -->
+                <div id="gallery" class="container gallery">
+
+                    <div class="row p-0 p-md-5">
+
+                        <div class="col gallery-container">
+
+                            <h1>Galería</h1>
+
+                            <hr>
+
+                            <p>Galería fotográfica en la que muestro ejemplos de la calidad de mis trabajos en fotografía en blanco y negro. La fotografía en blanco y negro es una forma de expresión artística que ha cautivado a los espectadores durante siglos. La ausencia de color permite que la atención se centre en los elementos formales de la imagen, como la composición, la iluminación y el contraste.</p>
+
+                            <div class="row images-container d-flex flex-column flex-md-row">
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_1.jpg" data-lightbox="roadtrip" data-title="Chico jóven con un abrigo.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_1.jpg" alt="Imagen 1">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_2.jpg" data-lightbox="roadtrip" data-title="Chica sentada en el suelo.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_2.jpg" alt="Imagen 2">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_3.jpg" data-lightbox="roadtrip" data-title="Chica con cazadora vaquera posando.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_3.jpg" alt="Imagen 3">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_4.jpg" data-lightbox="roadtrip" data-title="Chica posando junto a un coche viejo.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_4.jpg" alt="Imagen 4">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_5.jpg" data-lightbox="roadtrip" data-title="Varias personas vestidas de blanco.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_5.jpg" alt="Imagen 5">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_6.jpg" data-lightbox="roadtrip" data-title="Chica con una sudadera amarilla.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_6.jpg" alt="Imagen 6">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_7.jpg" data-lightbox="roadtrip" data-title="Chica con un sombrero de paja.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_7.jpg" alt="Imagen 7">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_8.jpg" data-lightbox="roadtrip" data-title="Chica en una colina sentada en una piedra.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_8.jpg" alt="Imagen 8">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_9.jpg" data-lightbox="roadtrip" data-title="Primer plano de una chica de ojos azules.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_9.jpg" alt="Imagen 9">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_10.jpg" data-lightbox="roadtrip" data-title="Chica posando con un vestido morado.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_10.jpg" alt="Imagen 10">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_11.jpg" data-lightbox="roadtrip" data-title="Chica sentada en una silla.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_11.jpg" alt="Imagen 11">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-12 col-md-4">
+
+                                    <a href="img/image_12.jpg" data-lightbox="roadtrip" data-title="Chica rubia con un piercing en la nariz.">
+                                        <div class="image-container">
+                                            <img class="image-fluid" src="img/image_12.jpg" alt="Imagen 12">
+                                            <div class="overlay">
+                                                <div class="overlay-lupa">
+                                                    <i class="fa-solid fa-magnifying-glass-plus" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- Fin de la galería -->
+
+                <!-- Sección 4 - Contacto -->
+                <div id="contact" class="container contact px-2">
+
+                    <div class="row d-flex p-2 p-lg-5">
+
+                        <div class="col">
+
+                            <h1>Contactar</h1>
+
+                            <hr>
+
+                            <p>Si necesitas más información o quieres hacer un encargo, rellena nuestro formulario de contacto.</p>
+
+                            <h5>Información</h5>
+                            <p>¿ Tienes alguna pregunta o sugerencia? No dudes en ponerte en contacto con nosotros.<br>Estamos siempre abiertos a escuchar tus comentarios. Puedes hacerlo a través de nuestro formulario de contacto.</p>
+
+                            <div class="contact-info d-flex justify-content-center align-items-center gap-3 mt-5">
+                                <div class="contact-icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span class="info-uno">Llámame</span><br><span class="info-dos">+34 669 50 50
+                                            50</span></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex justify-content-center align-items-center gap-3 mt-5">
+                                <div class="contact-icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span class="info-uno">Envíame un email</span><br><span
+                                            class="info-dos">info@photography.com</span></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex justify-content-center align-items-center gap-3 mt-5">
+                                <div class="contact-icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span class="info-uno">Visítame en mi oficina</span><br><span class="info-dos">Paseo
+                                            de la Castellana 123</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col d-flex justify-content-center align-items-center">
+
+                            <div class="form-container">
+
+                                <h2 class="mb-5">Ponte en contacto</h2>
+
+                                <form action="procesar_formulario.php" method="post">
+                                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre *"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Tu nombre *'" required>
+                                    <input id="email" name="email" type="email" placeholder="Tu correo *"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Tu correo *'" required>
+                                    <input id="asunto" name="asunto" type="text" placeholder="Asunto *"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Asunto *'" required>
+                                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje *"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje *'" required></textarea>
+                                    <button type="submit">Enviar</button>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- Fin de contacto -->
+
+                <!-- Sección 5 - Footer -->
+                <footer class="container-fluid d-flex justify-content-center align-items-center text-center">
+
+                    <p>&copy; 2024 - Web realizada por Antonio Buitrago. Todos los derechos reservados.</p>
+
+                </footer> <!-- Fin del FOOTER -->
+
+            </main> <!-- /.main -->
+
+        </div>
+
+    </div>
+
+    <!-- Vinculación de Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>

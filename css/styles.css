@@ -1,0 +1,709 @@
+/* ==================================================================================
+================	URL 		      |		www.antoniobuitrago.es   ================
+================	Author Name		  |		Antonio Buitrago         ================
+================================================================================== */
+
+/* Importar el archivo de css con las fuentes del proyecto */
+@import url("fonts.css");
+
+/* Estilos de etiquetas generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Ubuntu-Regular";
+}
+
+aside {
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bs-black);
+    border-right: 2px solid var(--bs-light);
+}
+
+main {
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    top: 0 !important;
+    background-color: #ffa500;
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+    background:
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+        repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+
+/* Estilos del menú lateral (aside) */
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+aside i,
+main i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.logo h2 {
+    font-family: "BebasNeue-Regular";
+}
+
+.nav a {
+    font-family: "BebasNeue-Regular";
+    font-size: 1.5em;
+}
+
+aside a,
+aside a:active {
+    color: var(--bs-light);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+aside a:hover {
+    color: var(--bs-warning);
+    text-decoration: none;
+}
+
+
+.social i {
+    font-size: 2em;
+    color: #fff;
+}
+
+.social i:hover {
+    color: var(--bs-warning);
+}
+
+.newsletter {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.newsletter span {
+    color: var(--bs-white);
+}
+
+aside .newsletter input {
+    background-color: var(--bs-black);
+    border: 1px solid var(--bs-light);
+    height: 40px;
+    color: var(--bs-white);
+}
+
+aside .newsletter button {
+    border: 1px solid var(--bs-light);
+    height: 40px;
+    color: var(--bs-white);
+}
+
+aside .newsletter input[type="email"]::placeholder {
+    font-size: .8em;
+    /* Elige el tamaño de fuente que desees para el placeholder */
+    color: var(--bs-secondary);
+}
+
+aside .newsletter input[type="email"]:focus {
+    background-color: transparent;
+    /* Fondo transparente al obtener el foco */
+    color: var(--bs-white);
+}
+
+aside .newsletter button {
+    border: 1px solid var(--bs-light);
+    height: 40px;
+}
+
+/* Media queries del menú lateral (aside) */
+@media(max-width: 768px) {
+
+    aside {
+        display: none;
+    }
+
+}
+
+/* Estilos del área principal, con las diferentes secciones (main) */
+.open-btn i {
+
+    font-size: 1em;
+
+}
+
+/* Estilos del offcanvas con el menú hamburguesa */
+.offcanvas {
+    background-color: var(--bs-black);
+    color: var(--bs-white);
+    min-height: 100vh;
+}
+
+.offcanvas a,
+.offcanvas a:active {
+    font-family: "BebasNeue-Regular";
+    font-size: 2em;
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.offcanvas a:hover {
+    color: var(--bs-warning);
+}
+
+.offcanvas i {
+    color: var(--bs-white);
+}
+
+/* Media queries del offcanvas */
+@media(max-width: 768px) {
+
+    .offcanvas-body {
+        margin-top: -50px;
+    }
+
+}
+
+/* Estilos de la sección 1 (home) */
+.home {
+    margin: 0;
+    padding: 0;
+    min-height: 85vh;
+    height: auto;
+    margin: 5% auto;
+    border: 2px solid #111;
+    background-image: url('../img/bg-home.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px #111;
+}
+
+.home img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.home-intro {
+    position: relative;
+    width: 55%;
+    height: 50%;
+    top: 30%;
+    left: 3%;
+    font-family: "Ubuntu-Regular";
+    color: #FFF;
+}
+
+.presentacion {
+    margin-top: 25%;
+}
+
+.home-intro p {
+    font-size: 1.2em;
+    color: #c4c1c1;
+}
+
+.home-intro h2 {
+    font-family: "Ubuntu-Bold";
+    font-size: 3em;
+}
+
+.home-intro .botonPortfolio {
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: #ffffff;
+    color: #080808;
+    border-radius: 2em;
+    border: 2px solid #ffffff;
+    font-family: "Ubuntu-Regular";
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 250px;
+    text-align: center;
+}
+
+.home-intro .botonPortfolio:hover {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.home-intro .botonContactar {
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: transparent;
+    color: #FFF;
+    border-radius: 2em;
+    border: 2px solid #ffffff;
+    font-family: "Ubuntu-Regular";
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 250px;
+    text-align: center;
+}
+
+.home-intro .botonContactar:hover {
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
+}
+
+/* Media queries de la sección 1 (home) */
+@media(max-width: 992px) {
+
+    .home {
+        margin-top: -60px;
+    }
+    .presentacion {
+        margin-top: 10%;
+    }
+
+    .home-intro h2 {
+        font-size: 2em;
+    }
+
+}
+
+/* Estilos de la sección 2 (about) */
+.about {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 5rem;
+}
+
+.about h1 {
+    font-family: "BebasNeue-Regular";
+    font-size: 2em;
+    color: #FFF;
+}
+
+.about p {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+.about span {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+.about-text {
+    width: 100%;
+    height: 100%;
+}
+
+.about-text hr {
+    width: 100%;
+    color: #CCC;
+}
+
+.about-text i {
+    font-size: 2.2em;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.about-image img {
+    width: 75%;
+    border: 2px solid #000;
+    box-shadow: 20px 20px 1px rgba(200, 200, 200, .7);
+    margin-bottom: 12%;
+}
+
+.about-contain {
+    width: 100%;
+    margin-top: 10%;
+}
+
+p .firma-autor {
+    font-family: "Ubuntu-Bold";
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+p .firma-founder {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+/* Media queries de la sección 2 (about) */
+@media(max-width: 992px) {
+
+    .about-image {
+        margin-top: 0px;
+    }
+
+}
+
+/* Estilos de la sección 3 (galería) */
+.gallery {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+}
+
+.gallery h1 {
+    font-family: "BebasNeue-Regular";
+    font-size: 2em;
+    color: #FFF;
+}
+
+.gallery h5 {
+    font-family: "Ubuntu-Bold";
+    font-size: 1.5em;
+    color: #FFF;
+    margin-top: 40%;
+}
+
+.gallery p {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+.gallery hr {
+    width: 100%;
+    color: #CCC;
+}
+
+.gallery-container {
+    width: 100%;
+    height: auto;
+}
+
+.images-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    gap: 0;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin: 0 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #CCC;
+}
+
+.image-container img {
+    transition: transform 1s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay-lupa {
+    font-family: "Ubuntu-Bold";
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    opacity: 0.6;
+}
+
+.overlay span.tag {
+    font-family: "Ubuntu-Bold";
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Media queries de la sección 3 (galería) */
+@media only screen and (max-width: 992px) {
+
+    .gallery {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .gallery-container {
+        width: 100%;
+    }
+
+    .images-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .overlay-lupa {
+        font-size: 2em;
+    }
+
+}
+
+/* Estilos de la sección 4 (contacto) */
+.contact {
+    margin-top: 150px;
+    padding: 0;
+    min-height: 100vh;
+    height: auto;
+}
+
+.contact h1 {
+    font-family: "BebasNeue-Regular";
+    font-size: 2em;
+    color: #FFF;
+}
+
+.contact h5 {
+    font-family: "Ubuntu-Bold";
+    font-size: 1.5em;
+    color: #FFF;
+    margin-top: 30%;
+}
+
+.contact p {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+.contact hr {
+    width: 100%;
+    color: #CCC;
+}
+
+.contact-info {
+    width: 70%;
+    height: 40px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 50px;
+    background-color: #928f8f;
+}
+
+.contact-info-text {
+    width: 100%;
+    height: 50px;
+}
+
+.contact-icon i {
+    font-size: 2em;
+}
+
+p .info-uno {
+    font-family: "Ubuntu-Bold";
+    font-size: 1.1em;
+    color: #fff;
+}
+
+p .info-dos {
+    font-family: "Ubuntu-Regular";
+    font-size: 1em;
+    color: #928f8f;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100%;
+    background-color: #ffa500;
+}
+
+.form-container {
+    width: 75%;
+    height: 600px;
+    border: 2px solid #121318;
+    box-shadow: 20px 20px 1px rgba(200, 200, 200, .7);
+    background-color: #101114;
+    padding: 5%;
+}
+
+.form-container h2 {
+    font-family: "Ubuntu-Bold";
+    font-size: 1.5em;
+    color: #FFF;
+    margin-left: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    background: transparent;
+    padding: 5px;
+    margin: 10px 0;
+    color: #FFF;
+}
+
+textarea {
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    background: transparent;
+    padding: 5px;
+    margin: 10px 0;
+    resize: none;
+    color: #FFF;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #928f8f;
+}
+
+button[type="submit"] {
+    background: #333;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 18px;
+    align-self: flex-end;
+}
+
+button[type="submit"]:hover {
+    background: #555;
+}
+
+/* Media queries de la sección 4 (contacto) */
+@media only screen and (max-width: 992px) {
+
+    .contact {
+        width: 100%;
+        height: auto !important;
+        padding-top: 5%;
+    }
+
+    .contact .row {
+        width: 100%;
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .row .col {
+        width: 100%;
+        height: auto !important;
+    }
+
+    .contact h5 {
+        margin-top: 10%;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .contact-info {
+        width: 100%;
+        height: 60px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #928f8f;
+    }
+
+    .contact-info-text {
+        width: 100%;
+        height: 60px;
+    }
+
+    .contact-icon i {
+        font-size: 2em;
+    }
+
+}
+
+/* Estilos del Footer */
+footer {
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    border: 1px solid #616161;
+    background-color: var(--bs-black);
+}
+
+footer p {
+    font-family: "BebasNeue-Regular";
+    font-size: 1.5em;
+    color: var(--bs-white);
+    margin-top: 20px;
+}
+
+/* Media queries del footer */
+@media only screen and (max-width: 992px) {
+
+footer {
+    margin-top: 50px;
+}
+
+}
